@@ -1,0 +1,3 @@
+CREATE DATABASE;
+CREATE TABLE USER;
+user_id num(12);

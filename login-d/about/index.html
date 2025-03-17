@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="web-logo" href="/img/Logo (1).ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>About | Developer</title>
+</head>
+<body onload="onload()">
+    <div class="container">
+        <text>Profile</text>
+        <div class="dl">
+        </div>
+    </div>
+    <div class="card_panel">
+        <div class="card">
+            <img src="/img/lk.png">
+            <text>MR.SRIKANT ASHOK PAWAR</text>
+            <h5>Bhavi Engineer</h5>
+            <div class="mc">
+                <text >Contact</text>
+                <li><a href="tel:+8862007036">Call</a></li>
+                <li><a href="mailto:shrikantpawar493@gmail.com" style="padding: 5px 80px 5px 80px;">Email</a></li>
+            </div>
+        </div>
+        <div class="identity_panel">
+            <div class="table_1">
+                <div class="id"><text>Identity</text></div>
+                <table>
+                    <tr style="margin-left: 20px;">
+                        <td>Name</td>
+                        <td>: </td>
+                        <td> Shrikant Ashok Pawar</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>: </td>
+                        <td> shrikantpawar493@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>: </td>
+                        <td> Laxminagar, kopargaon -423601</td>
+                    </tr>
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>: </td>
+                        <td> Gaming, Cricket Watching playing and Movies </td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>: </td>
+                        <td> C++, Python, Java, html, css, js, sql, DSA in C++</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="social">
+                <li>
+                    <a href="https://www.facebook.com/srikant.pawar.9279?mibextid=D4KYlr" target="main"><img src="/img/facebook-2870.png" alt="">Facebook</a>
+                    <a href="https://www.instagram.com/srikant.pawar_45" target="main"><img src="/img/instagram-logo-8869.png" alt="">Instagram</a>
+                    <a href="https://youtube.com/@shrikantpawar378" target="main"><img src="/img/youtube-141.png" alt="">Youtube</a>
+                    <a href="https://wa.me/918862007036" target="main"><img src="/img/whatsapp-logo-2449.png" alt="">Whatsapp</a>
+                </li>
+            </div>
+        </div>
+    </div>
+    <script src="/index.js"></script>
+</body>
+</html>
+
+<script >
+function darkmode() {
+    const wasDarkmode = localStorage.getItem('darkmode') === 'true';
+    localStorage.setItem('darkmode', !wasDarkmode);
+    const element = document.body;
+    element.classList.toggle('dark-theme', !wasDarkmode);
+}
+
+function onload() {
+    document.body.classList.toggle('dark-theme', localStorage.getItem('darkmode') === 'true');
+}
+</script>
